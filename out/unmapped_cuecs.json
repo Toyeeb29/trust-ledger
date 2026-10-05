@@ -1,0 +1,119 @@
+[
+  {
+    "id": "GITHUB-04",
+    "vendor": "GitHub",
+    "text": "Securing configuration of GitHub Actions. See https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions for detailed guidance.",
+    "page": 22,
+    "method": "section",
+    "confidence": "high",
+    "report": "github_soc3_2023.pdf"
+  },
+  {
+    "id": "PEOPLEDATA-01",
+    "vendor": "People Data Labs",
+    "text": "User entities are responsible for understanding and complying with their contractual obligations to People Data Labs, Inc.",
+    "page": 22,
+    "method": "section",
+    "confidence": "high",
+    "report": "pdl_soc3.pdf"
+  },
+  {
+    "id": "PEOPLEDATA-02",
+    "vendor": "People Data Labs",
+    "text": "User entities are responsible for notifying People Data Labs, Inc. of changes made to technical or administrative contact information.",
+    "page": 22,
+    "method": "section",
+    "confidence": "high",
+    "report": "pdl_soc3.pdf"
+  },
+  {
+    "id": "PEOPLEDATA-03",
+    "vendor": "People Data Labs",
+    "text": "User entities are responsible for maintaining their system(s) of record.",
+    "page": 22,
+    "method": "section",
+    "confidence": "high",
+    "report": "pdl_soc3.pdf"
+  },
+  {
+    "id": "PEOPLEDATA-06",
+    "vendor": "People Data Labs",
+    "text": "User entities are responsible for providing People Data Labs, Inc. with a list of approvers for security and system configuration changes for data transmission.",
+    "page": 22,
+    "method": "section",
+    "confidence": "high",
+    "report": "pdl_soc3.pdf"
+  },
+  {
+    "id": "PEOPLEDATA-07",
+    "vendor": "People Data Labs",
+    "text": "User entities are responsible for immediately notifying People Data Labs, Inc. of any actual or suspected information security breaches, including compromised user accounts, including those used for integrations and secure file transfer",
+    "page": 22,
+    "method": "section",
+    "confidence": "high",
+    "report": "pdl_soc3.pdf"
+  },
+  {
+    "id": "AWS-01",
+    "vendor": "AWS",
+    "text": "This mandatory inbound firewall is configured in a default deny-all mode to prevent unauthorized access and Amazon EC2 customers must explicitly open the ports needed to allow inbound traffic.",
+    "page": 16,
+    "method": "embedded",
+    "confidence": "medium",
+    "report": "aws_soc3.pdf"
+  },
+  {
+    "id": "AWS-02",
+    "vendor": "AWS",
+    "text": "The customer is responsible for choosing which of their Virtual Private Clouds (VPCs) they want a file system to be accessed from by creating resources called mount targets.",
+    "page": 17,
+    "method": "embedded",
+    "confidence": "medium",
+    "report": "aws_soc3.pdf"
+  },
+  {
+    "id": "AWS-03",
+    "vendor": "AWS",
+    "text": "Customers are responsible for securing these compute resources, for example if a customer uses Amazon EC2 for workers then they can restrict access to their instances in Amazon EC2 to specific AWS IAM users.",
+    "page": 26,
+    "method": "embedded",
+    "confidence": "medium",
+    "report": "aws_soc3.pdf"
+  },
+  {
+    "id": "AWS-05",
+    "vendor": "AWS",
+    "text": "As an Infrastructure as a Service (IaaS) System, the AWS System is designed based on a shared responsibility model where both AWS and the customers are responsible for aspects of security, availability and confidentiality.",
+    "page": 50,
+    "method": "embedded",
+    "confidence": "medium",
+    "report": "aws_soc3.pdf"
+  },
+  {
+    "id": "AWS-06",
+    "vendor": "AWS",
+    "text": "Customers are responsible for the development, operation, maintenance, and use of their content.",
+    "page": 51,
+    "method": "embedded",
+    "confidence": "medium",
+    "report": "aws_soc3.pdf"
+  },
+  {
+    "id": "AWS-07",
+    "vendor": "AWS",
+    "text": "Customers are responsible for determining what content to store within AWS, which may include personal information.",
+    "page": 54,
+    "method": "embedded",
+    "confidence": "medium",
+    "report": "aws_soc3.pdf"
+  },
+  {
+    "id": "AWS-08",
+    "vendor": "AWS",
+    "text": "If required, customers are responsible for providing notice to the individuals whose data the customer collects and uses within AWS.",
+    "page": 55,
+    "method": "embedded",
+    "confidence": "medium",
+    "report": "aws_soc3.pdf"
+  }
+]

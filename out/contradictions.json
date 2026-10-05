@@ -1,0 +1,389 @@
+[
+  {
+    "topic": "access_review_frequency",
+    "severity": "HIGH",
+    "issues": [
+      "Values differ: strictest is quarterly (Contoso Health), loosest is annually (Fabrikam Retail)"
+    ],
+    "promises": [
+      {
+        "id": "C0006",
+        "customer": "Contoso Health",
+        "answer": "Access is reviewed quarterly by system owners.",
+        "value_display": "quarterly",
+        "source_file": "contoso_health_caiq.xlsx",
+        "ref": "ACC-06.1"
+      },
+      {
+        "id": "C0073",
+        "customer": "Fabrikam Retail",
+        "answer": "Access reviews are performed annually.",
+        "value_display": "annually",
+        "source_file": "fabrikam_retail_vendor_review.xlsx",
+        "ref": "6"
+      },
+      {
+        "id": "C0136",
+        "customer": "Northwind Bank",
+        "answer": "User access reviews are performed quarterly.",
+        "value_display": "quarterly",
+        "source_file": "northwind_bank_sig_lite.xlsx",
+        "ref": "ACC-002"
+      }
+    ],
+    "broken_for": []
+  },
+  {
+    "topic": "access_revocation",
+    "severity": "HIGH",
+    "issues": [
+      "Values differ: strictest is 24 hours (Contoso Health), loosest is 48 hours (Fabrikam Retail)",
+      "Clock starts at different events: Contoso Health \u2192 last working day, Northwind Bank \u2192 termination"
+    ],
+    "promises": [
+      {
+        "id": "C0005",
+        "customer": "Contoso Health",
+        "answer": "Access is revoked within 24 hours of the employee's last day.",
+        "value_display": "24 hours",
+        "source_file": "contoso_health_caiq.xlsx",
+        "ref": "ACC-05.1"
+      },
+      {
+        "id": "C0068",
+        "customer": "Fabrikam Retail",
+        "answer": "Access removal is completed within 48 hours.",
+        "value_display": "48 hours",
+        "source_file": "fabrikam_retail_vendor_review.xlsx",
+        "ref": "1"
+      },
+      {
+        "id": "C0139",
+        "customer": "Northwind Bank",
+        "answer": "Access is revoked within 24 hours of termination.",
+        "value_display": "24 hours",
+        "source_file": "northwind_bank_sig_lite.xlsx",
+        "ref": "ACC-005"
+      }
+    ],
+    "broken_for": []
+  },
+  {
+    "topic": "breach_notification",
+    "severity": "HIGH",
+    "issues": [
+      "Values differ: strictest is 24 hours (Contoso Health), loosest is 72 hours (Northwind Bank)",
+      "Clock starts at different events: Contoso Health \u2192 discovery, Northwind Bank \u2192 confirmation",
+      "Hedged for Fabrikam Retail, firm for the others"
+    ],
+    "promises": [
+      {
+        "id": "C0050",
+        "customer": "Contoso Health",
+        "answer": "Customers are notified within 24 hours of discovery of a breach involving PHI.",
+        "value_display": "24 hours",
+        "source_file": "contoso_health_caiq.xlsx",
+        "ref": "INC-50.1"
+      },
+      {
+        "id": "C0115",
+        "customer": "Fabrikam Retail",
+        "answer": "Notification occurs without undue delay, typically within 72 hours.",
+        "value_display": "72 hours",
+        "source_file": "fabrikam_retail_vendor_review.xlsx",
+        "ref": "48"
+      },
+      {
+        "id": "C0182",
+        "customer": "Northwind Bank",
+        "answer": "We will notify affected customers within 72 hours of confirming a security incident.",
+        "value_display": "72 hours",
+        "source_file": "northwind_bank_sig_lite.xlsx",
+        "ref": "INC-048"
+      }
+    ],
+    "broken_for": []
+  },
+  {
+    "topic": "data_deletion",
+    "severity": "HIGH",
+    "issues": [
+      "Values differ: strictest is 30 days (Contoso Health), loosest is 90 days (Fabrikam Retail)"
+    ],
+    "promises": [
+      {
+        "id": "C0027",
+        "customer": "Contoso Health",
+        "answer": "Data is deleted within 30 days of termination and a certificate of destruction is provided.",
+        "value_display": "30 days",
+        "source_file": "contoso_health_caiq.xlsx",
+        "ref": "DAT-27.1"
+      },
+      {
+        "id": "C0100",
+        "customer": "Fabrikam Retail",
+        "answer": "Customer data is purged within 90 days of termination.",
+        "value_display": "90 days",
+        "source_file": "fabrikam_retail_vendor_review.xlsx",
+        "ref": "33"
+      },
+      {
+        "id": "C0161",
+        "customer": "Northwind Bank",
+        "answer": "Customer data is deleted within 30 days of contract termination.",
+        "value_display": "30 days",
+        "source_file": "northwind_bank_sig_lite.xlsx",
+        "ref": "DAT-027"
+      }
+    ],
+    "broken_for": []
+  },
+  {
+    "topic": "log_retention",
+    "severity": "HIGH",
+    "issues": [
+      "Values differ: strictest is 12 months (Contoso Health), loosest is 90 days (Fabrikam Retail)"
+    ],
+    "promises": [
+      {
+        "id": "C0051",
+        "customer": "Contoso Health",
+        "answer": "Logs are retained for 12 months in immutable storage.",
+        "value_display": "12 months",
+        "source_file": "contoso_health_caiq.xlsx",
+        "ref": "LOG-51.1"
+      },
+      {
+        "id": "C0118",
+        "customer": "Fabrikam Retail",
+        "answer": "We retain logs for 90 days.",
+        "value_display": "90 days",
+        "source_file": "fabrikam_retail_vendor_review.xlsx",
+        "ref": "51"
+      },
+      {
+        "id": "C0185",
+        "customer": "Northwind Bank",
+        "answer": "Security audit logs are retained for a minimum of one (1) year.",
+        "value_display": "1 year",
+        "source_file": "northwind_bank_sig_lite.xlsx",
+        "ref": "LOG-051"
+      }
+    ],
+    "broken_for": [
+      {
+        "id": "C0051",
+        "customer": "Contoso Health",
+        "answer": "Logs are retained for 12 months in immutable storage.",
+        "value_display": "12 months",
+        "source_file": "contoso_health_caiq.xlsx",
+        "ref": "LOG-51.1"
+      },
+      {
+        "id": "C0185",
+        "customer": "Northwind Bank",
+        "answer": "Security audit logs are retained for a minimum of one (1) year.",
+        "value_display": "1 year",
+        "source_file": "northwind_bank_sig_lite.xlsx",
+        "ref": "LOG-051"
+      }
+    ]
+  },
+  {
+    "topic": "mfa_scope",
+    "severity": "HIGH",
+    "issues": [
+      "Values differ: strictest is all workforce accounts (Contoso Health), loosest is administrator accounts only (Fabrikam Retail)"
+    ],
+    "promises": [
+      {
+        "id": "C0002",
+        "customer": "Contoso Health",
+        "answer": "Yes. MFA is required for all workforce accounts.",
+        "value_display": "all workforce accounts",
+        "source_file": "contoso_health_caiq.xlsx",
+        "ref": "ACC-02.1"
+      },
+      {
+        "id": "C0070",
+        "customer": "Fabrikam Retail",
+        "answer": "Yes, MFA is enabled for administrator accounts.",
+        "value_display": "administrator accounts only",
+        "source_file": "fabrikam_retail_vendor_review.xlsx",
+        "ref": "3"
+      },
+      {
+        "id": "C0140",
+        "customer": "Northwind Bank",
+        "answer": "Yes. MFA is enforced for all administrative and production access.",
+        "value_display": "admin + production access",
+        "source_file": "northwind_bank_sig_lite.xlsx",
+        "ref": "ACC-006"
+      }
+    ],
+    "broken_for": [
+      {
+        "id": "C0002",
+        "customer": "Contoso Health",
+        "answer": "Yes. MFA is required for all workforce accounts.",
+        "value_display": "all workforce accounts",
+        "source_file": "contoso_health_caiq.xlsx",
+        "ref": "ACC-02.1"
+      },
+      {
+        "id": "C0140",
+        "customer": "Northwind Bank",
+        "answer": "Yes. MFA is enforced for all administrative and production access.",
+        "value_display": "admin + production access",
+        "source_file": "northwind_bank_sig_lite.xlsx",
+        "ref": "ACC-006"
+      }
+    ]
+  },
+  {
+    "topic": "pentest_frequency",
+    "severity": "HIGH",
+    "issues": [
+      "Values differ: strictest is twice a year (Contoso Health), loosest is annually (Northwind Bank)"
+    ],
+    "promises": [
+      {
+        "id": "C0066",
+        "customer": "Contoso Health",
+        "answer": "Penetration testing is performed twice a year by an independent firm.",
+        "value_display": "twice a year",
+        "source_file": "contoso_health_caiq.xlsx",
+        "ref": "VUL-66.1"
+      },
+      {
+        "id": "C0133",
+        "customer": "Fabrikam Retail",
+        "answer": "Annual penetration test by a third party.",
+        "value_display": "annually",
+        "source_file": "fabrikam_retail_vendor_review.xlsx",
+        "ref": "66"
+      },
+      {
+        "id": "C0199",
+        "customer": "Northwind Bank",
+        "answer": "Third-party penetration tests are performed annually.",
+        "value_display": "annually",
+        "source_file": "northwind_bank_sig_lite.xlsx",
+        "ref": "VUL-065"
+      }
+    ],
+    "broken_for": [
+      {
+        "id": "C0066",
+        "customer": "Contoso Health",
+        "answer": "Penetration testing is performed twice a year by an independent firm.",
+        "value_display": "twice a year",
+        "source_file": "contoso_health_caiq.xlsx",
+        "ref": "VUL-66.1"
+      }
+    ]
+  },
+  {
+    "topic": "rto",
+    "severity": "HIGH",
+    "issues": [
+      "Values differ: strictest is 4 hours (Northwind Bank), loosest is 24 hours (Fabrikam Retail)",
+      "Hedged for Fabrikam Retail, firm for the others"
+    ],
+    "promises": [
+      {
+        "id": "C0016",
+        "customer": "Contoso Health",
+        "answer": "RTO is 8 hours for the production platform.",
+        "value_display": "8 hours",
+        "source_file": "contoso_health_caiq.xlsx",
+        "ref": "BUS-16.1"
+      },
+      {
+        "id": "C0086",
+        "customer": "Fabrikam Retail",
+        "answer": "We target an RTO of 24 hours.",
+        "value_display": "24 hours",
+        "source_file": "fabrikam_retail_vendor_review.xlsx",
+        "ref": "19"
+      },
+      {
+        "id": "C0152",
+        "customer": "Northwind Bank",
+        "answer": "Our RTO is 4 hours.",
+        "value_display": "4 hours",
+        "source_file": "northwind_bank_sig_lite.xlsx",
+        "ref": "BUS-018"
+      }
+    ],
+    "broken_for": []
+  },
+  {
+    "topic": "vuln_remediation_critical",
+    "severity": "HIGH",
+    "issues": [
+      "Values differ: strictest is 7 days (Contoso Health), loosest is 30 days (Fabrikam Retail)"
+    ],
+    "promises": [
+      {
+        "id": "C0065",
+        "customer": "Contoso Health",
+        "answer": "Critical vulnerabilities are patched within 7 days of identification.",
+        "value_display": "7 days",
+        "source_file": "contoso_health_caiq.xlsx",
+        "ref": "VUL-65.1"
+      },
+      {
+        "id": "C0131",
+        "customer": "Fabrikam Retail",
+        "answer": "Critical: 30 days.",
+        "value_display": "30 days",
+        "source_file": "fabrikam_retail_vendor_review.xlsx",
+        "ref": "64"
+      },
+      {
+        "id": "C0200",
+        "customer": "Northwind Bank",
+        "answer": "Critical vulnerabilities are remediated within 15 days.",
+        "value_display": "15 days",
+        "source_file": "northwind_bank_sig_lite.xlsx",
+        "ref": "VUL-066"
+      }
+    ],
+    "broken_for": []
+  },
+  {
+    "topic": "backup_retention",
+    "severity": "MEDIUM",
+    "issues": [
+      "Values differ: strictest is 35 days (Contoso Health), loosest is 30 days (Fabrikam Retail)"
+    ],
+    "promises": [
+      {
+        "id": "C0019",
+        "customer": "Contoso Health",
+        "answer": "Daily backups, retained for 35 days.",
+        "value_display": "35 days",
+        "source_file": "contoso_health_caiq.xlsx",
+        "ref": "BUS-19.1"
+      },
+      {
+        "id": "C0083",
+        "customer": "Fabrikam Retail",
+        "answer": "Daily backups with 30 day retention.",
+        "value_display": "30 days",
+        "source_file": "fabrikam_retail_vendor_review.xlsx",
+        "ref": "16"
+      },
+      {
+        "id": "C0153",
+        "customer": "Northwind Bank",
+        "answer": "Backups are performed daily and retained for 35 days.",
+        "value_display": "35 days",
+        "source_file": "northwind_bank_sig_lite.xlsx",
+        "ref": "BUS-019"
+      }
+    ],
+    "broken_for": []
+  }
+]

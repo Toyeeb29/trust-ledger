@@ -1,0 +1,21 @@
+{
+  "_note": "What the environment actually does today, per automated checks (simulated in this demo). Values use the same units as taxonomy.py: duration in hours, frequency per year, scope rank 1-3. MFA now comes from the live GitHub check (collect_evidence.py), not from here.",
+  "collected_at": "2026-10-05T15:45:00-04:00",
+  "observed": {
+    "log_retention": {
+      "value": 2160,
+      "display": "90 days",
+      "source": "S3 lifecycle rule on CloudTrail bucket"
+    },
+    "backup_retention": {
+      "value": 840,
+      "display": "35 days",
+      "source": "AWS Backup plan 'prod-daily'"
+    },
+    "pentest_frequency": {
+      "value": 1,
+      "display": "annually (last test 2026-02)",
+      "source": "Pentest report register"
+    }
+  }
+}

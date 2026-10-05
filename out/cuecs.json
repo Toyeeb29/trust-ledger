@@ -1,0 +1,239 @@
+[
+  {
+    "vendor": "GitHub",
+    "report": "github_soc3_2023.pdf",
+    "url": "https://github.githubassets.com/assets/2023-GitHub-SOC-3-Report-c6098ceeef99.pdf",
+    "our_usage": "Source code, CI/CD (GitHub Actions)",
+    "pages": 23,
+    "method": "section",
+    "period_start": "2022-10-01",
+    "period_end": "2023-09-30",
+    "freshness": "stale",
+    "months_since_period_end": 37,
+    "trust_services_categories": [
+      "Security"
+    ],
+    "subservice_orgs": [
+      "Amazon Web Services",
+      "Microsoft Azure",
+      "Equinix",
+      "CoreSite",
+      "QTS",
+      "Sabey"
+    ],
+    "cuecs": [
+      {
+        "id": "GITHUB-01",
+        "vendor": "GitHub",
+        "text": "Enabling SAML for their Enterprise Cloud accounts.",
+        "page": 22,
+        "method": "section",
+        "confidence": "high",
+        "report": "github_soc3_2023.pdf"
+      },
+      {
+        "id": "GITHUB-02",
+        "vendor": "GitHub",
+        "text": "Enabling two-factor authentication and ensuring members and collaborators require two-factor authentication; this includes the implementation and management of personal access tokens.",
+        "page": 22,
+        "method": "section",
+        "confidence": "high",
+        "report": "github_soc3_2023.pdf"
+      },
+      {
+        "id": "GITHUB-03",
+        "vendor": "GitHub",
+        "text": "Administering and configuring repositories, including permissions, enabling required reviews for pull requests, and enabling required status checks before merging.",
+        "page": 22,
+        "method": "section",
+        "confidence": "high",
+        "report": "github_soc3_2023.pdf"
+      },
+      {
+        "id": "GITHUB-04",
+        "vendor": "GitHub",
+        "text": "Securing configuration of GitHub Actions. See https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions for detailed guidance.",
+        "page": 22,
+        "method": "section",
+        "confidence": "high",
+        "report": "github_soc3_2023.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "People Data Labs",
+    "report": "pdl_soc3.pdf",
+    "url": "https://www.peopledatalabs.com/pdf/pdl-soc3.pdf",
+    "our_usage": "Contact enrichment for sales",
+    "pages": 22,
+    "method": "section",
+    "period_start": "2021-10-01",
+    "period_end": "2022-09-30",
+    "freshness": "stale",
+    "months_since_period_end": 49,
+    "trust_services_categories": [
+      "Security"
+    ],
+    "subservice_orgs": [
+      "Amazon Web Services"
+    ],
+    "cuecs": [
+      {
+        "id": "PEOPLEDATA-01",
+        "vendor": "People Data Labs",
+        "text": "User entities are responsible for understanding and complying with their contractual obligations to People Data Labs, Inc.",
+        "page": 22,
+        "method": "section",
+        "confidence": "high",
+        "report": "pdl_soc3.pdf"
+      },
+      {
+        "id": "PEOPLEDATA-02",
+        "vendor": "People Data Labs",
+        "text": "User entities are responsible for notifying People Data Labs, Inc. of changes made to technical or administrative contact information.",
+        "page": 22,
+        "method": "section",
+        "confidence": "high",
+        "report": "pdl_soc3.pdf"
+      },
+      {
+        "id": "PEOPLEDATA-03",
+        "vendor": "People Data Labs",
+        "text": "User entities are responsible for maintaining their system(s) of record.",
+        "page": 22,
+        "method": "section",
+        "confidence": "high",
+        "report": "pdl_soc3.pdf"
+      },
+      {
+        "id": "PEOPLEDATA-04",
+        "vendor": "People Data Labs",
+        "text": "User entities are responsible for ensuring the supervision, management, and control of the use of People Data Labs, Inc. services by their personnel.",
+        "page": 22,
+        "method": "section",
+        "confidence": "high",
+        "report": "pdl_soc3.pdf"
+      },
+      {
+        "id": "PEOPLEDATA-05",
+        "vendor": "People Data Labs",
+        "text": "User entities are responsible for developing disaster recovery and business continuity plans that address the inability to access or utilize People Data Labs, Inc. services.",
+        "page": 22,
+        "method": "section",
+        "confidence": "high",
+        "report": "pdl_soc3.pdf"
+      },
+      {
+        "id": "PEOPLEDATA-06",
+        "vendor": "People Data Labs",
+        "text": "User entities are responsible for providing People Data Labs, Inc. with a list of approvers for security and system configuration changes for data transmission.",
+        "page": 22,
+        "method": "section",
+        "confidence": "high",
+        "report": "pdl_soc3.pdf"
+      },
+      {
+        "id": "PEOPLEDATA-07",
+        "vendor": "People Data Labs",
+        "text": "User entities are responsible for immediately notifying People Data Labs, Inc. of any actual or suspected information security breaches, including compromised user accounts, including those used for integrations and secure file transfer",
+        "page": 22,
+        "method": "section",
+        "confidence": "high",
+        "report": "pdl_soc3.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "AWS",
+    "report": "aws_soc3.pdf",
+    "url": "https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/whitepapers/compliance/AWS_SOC3_Report.pdf",
+    "our_usage": "Production hosting",
+    "pages": 56,
+    "method": "embedded",
+    "period_start": "2025-04-01",
+    "period_end": "2026-03-31",
+    "freshness": "bridge letter needed",
+    "months_since_period_end": 7,
+    "trust_services_categories": [
+      "Security",
+      "Availability",
+      "Confidentiality",
+      "Privacy"
+    ],
+    "subservice_orgs": [],
+    "cuecs": [
+      {
+        "id": "AWS-01",
+        "vendor": "AWS",
+        "text": "This mandatory inbound firewall is configured in a default deny-all mode to prevent unauthorized access and Amazon EC2 customers must explicitly open the ports needed to allow inbound traffic.",
+        "page": 16,
+        "method": "embedded",
+        "confidence": "medium",
+        "report": "aws_soc3.pdf"
+      },
+      {
+        "id": "AWS-02",
+        "vendor": "AWS",
+        "text": "The customer is responsible for choosing which of their Virtual Private Clouds (VPCs) they want a file system to be accessed from by creating resources called mount targets.",
+        "page": 17,
+        "method": "embedded",
+        "confidence": "medium",
+        "report": "aws_soc3.pdf"
+      },
+      {
+        "id": "AWS-03",
+        "vendor": "AWS",
+        "text": "Customers are responsible for securing these compute resources, for example if a customer uses Amazon EC2 for workers then they can restrict access to their instances in Amazon EC2 to specific AWS IAM users.",
+        "page": 26,
+        "method": "embedded",
+        "confidence": "medium",
+        "report": "aws_soc3.pdf"
+      },
+      {
+        "id": "AWS-04",
+        "vendor": "AWS",
+        "text": "In addition, customers are responsible for encrypting sensitive data before it is passed to their workflows and decrypting it in their workers.",
+        "page": 26,
+        "method": "embedded",
+        "confidence": "medium",
+        "report": "aws_soc3.pdf"
+      },
+      {
+        "id": "AWS-05",
+        "vendor": "AWS",
+        "text": "As an Infrastructure as a Service (IaaS) System, the AWS System is designed based on a shared responsibility model where both AWS and the customers are responsible for aspects of security, availability and confidentiality.",
+        "page": 50,
+        "method": "embedded",
+        "confidence": "medium",
+        "report": "aws_soc3.pdf"
+      },
+      {
+        "id": "AWS-06",
+        "vendor": "AWS",
+        "text": "Customers are responsible for the development, operation, maintenance, and use of their content.",
+        "page": 51,
+        "method": "embedded",
+        "confidence": "medium",
+        "report": "aws_soc3.pdf"
+      },
+      {
+        "id": "AWS-07",
+        "vendor": "AWS",
+        "text": "Customers are responsible for determining what content to store within AWS, which may include personal information.",
+        "page": 54,
+        "method": "embedded",
+        "confidence": "medium",
+        "report": "aws_soc3.pdf"
+      },
+      {
+        "id": "AWS-08",
+        "vendor": "AWS",
+        "text": "If required, customers are responsible for providing notice to the individuals whose data the customer collects and uses within AWS.",
+        "page": 55,
+        "method": "embedded",
+        "confidence": "medium",
+        "report": "aws_soc3.pdf"
+      }
+    ]
+  }
+]

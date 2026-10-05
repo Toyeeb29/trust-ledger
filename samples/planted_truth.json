@@ -1,0 +1,65 @@
+{
+  "contradicting_topics": [
+    "log_retention",
+    "breach_notification",
+    "access_revocation",
+    "mfa_scope",
+    "pentest_frequency",
+    "vuln_remediation_critical",
+    "backup_retention",
+    "rto",
+    "access_review_frequency",
+    "data_deletion"
+  ],
+  "consistent_topics": [
+    "encryption_at_rest",
+    "security_training"
+  ],
+  "clock_start_mismatch": [
+    "breach_notification"
+  ],
+  "hedged": [
+    [
+      "Fabrikam Retail",
+      "breach_notification"
+    ],
+    [
+      "Fabrikam Retail",
+      "rto"
+    ]
+  ],
+  "vague_commitments": [
+    [
+      "Contoso Health",
+      "subprocessor_notice"
+    ]
+  ],
+  "roadmap_items": [
+    [
+      "Northwind Bank",
+      "SOC 2 Type II"
+    ],
+    [
+      "Contoso Health",
+      "SOC 2 Type II"
+    ],
+    [
+      "Contoso Health",
+      "SIEM"
+    ],
+    [
+      "Northwind Bank",
+      "DLP"
+    ],
+    [
+      "Contoso Health",
+      "HITRUST"
+    ]
+  ],
+  "past_due_roadmap": [
+    [
+      "Northwind Bank",
+      "DLP"
+    ]
+  ]
+}

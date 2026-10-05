@@ -1,0 +1,12 @@
+# Which automated check proves we're meeting a vendor CUEC.
+# Matched by vendor + a pattern on the CUEC text, so it survives re-extraction (CUEC ids can shift).
+# Check results live in evidence/check_results.json (simulated until step 3).
+checks:
+  - {vendor: GitHub, match: "two-factor", check: github_org_2fa_required}
+  - {vendor: GitHub, match: "SAML", check: github_saml_enforced}
+  - {vendor: GitHub, match: "required reviews|status checks", check: github_branch_protection}
+  - {vendor: AWS, match: "encrypt", check: aws_s3_default_encryption}
+  - {vendor: AWS, match: "\\blogs?\\b", check: aws_cloudtrail_retention_365d}
+  - {vendor: Lumenvault, match: "multi-factor", check: lumenvault_console_mfa}
+  - {vendor: Corvid Cloud, match: "encrypt", check: aws_s3_default_encryption}
+  - {vendor: Corvid Cloud, match: "log groups", check: aws_cloudtrail_retention_365d}

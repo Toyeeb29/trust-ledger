@@ -1,0 +1,36 @@
+# Weekly evidence run: collect live checks, rebuild the ledger, commit the results.
+# Setup: repo Settings > Secrets and variables > Actions
+#   secret   TL_GITHUB_TOKEN   classic PAT with admin:org, created by an owner of the org being checked
+#   variable TL_GITHUB_ORG     the org to check, e.g. brightnote-demo
+name: evidence
+
+on:
+  schedule:
+    - cron: "17 13 * * 1"   # Mondays 13:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install openpyxl pyyaml pdfplumber
+      - name: Collect live evidence
+        env:
+          GITHUB_TOKEN: ${{ secrets.TL_GITHUB_TOKEN }}
+        run: python collect_evidence.py --github-org "${{ vars.TL_GITHUB_ORG }}"
+      - name: Rebuild ledger
+        run: python ledger.py > /dev/null
+      - name: Commit evidence
+        run: |
+          git config user.name "trust-ledger-bot"
+          git config user.email "trust-ledger-bot@users.noreply.github.com"
+          git add evidence/ out/ledger.md out/ledger.json
+          git diff --cached --quiet || git commit -m "evidence: weekly run $(date -u +%F)"
+          git push

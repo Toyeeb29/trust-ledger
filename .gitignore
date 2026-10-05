@@ -1,0 +1,4 @@
+# Vendor SOC reports are licensed documents: keep them local
+vendor_reports/
+__pycache__/
+.pytest_cache/

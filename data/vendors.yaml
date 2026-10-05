@@ -1,0 +1,18 @@
+# Vendors whose SOC reports Brightnote relies on. Download each report into vendor_reports/
+# (gitignored: SOC reports are licensed to you, not yours to republish).
+vendors:
+  - name: GitHub
+    file: ../vendor_reports/github_soc3_2023.pdf
+    url: https://github.githubassets.com/assets/2023-GitHub-SOC-3-Report-c6098ceeef99.pdf
+    our_usage: Source code, CI/CD (GitHub Actions)
+    note: Org owners can download the current SOC 2 Type II under Org settings > Compliance
+
+  - name: People Data Labs
+    file: ../vendor_reports/pdl_soc3.pdf
+    url: https://www.peopledatalabs.com/pdf/pdl-soc3.pdf
+    our_usage: Contact enrichment for sales
+
+  - name: AWS
+    file: ../vendor_reports/aws_soc3.pdf
+    url: https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/whitepapers/compliance/AWS_SOC3_Report.pdf
+    our_usage: Production hosting

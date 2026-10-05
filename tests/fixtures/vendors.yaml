@@ -1,0 +1,7 @@
+vendors:
+  - name: Lumenvault
+    file: mock_section_style.pdf
+    our_usage: Secrets management for production
+  - name: Corvid Cloud
+    file: mock_embedded_style.pdf
+    our_usage: Hosting

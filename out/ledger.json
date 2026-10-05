@@ -1,0 +1,379 @@
+[
+  {
+    "id": "C0002",
+    "customer": "Contoso Health",
+    "topic": "mfa_scope",
+    "answer": "Yes. MFA is required for all workforce accounts.",
+    "verdict": "AT RISK",
+    "reasons": [
+      "GitHub CUEC failing: Org setting 'Require 2FA' is OFF; 3 members without 2FA"
+    ]
+  },
+  {
+    "id": "C0005",
+    "customer": "Contoso Health",
+    "topic": "access_revocation",
+    "answer": "Access is revoked within 24 hours of the employee's last day.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "no evidence of any kind is linked to this promise"
+    ]
+  },
+  {
+    "id": "C0006",
+    "customer": "Contoso Health",
+    "topic": "access_review_frequency",
+    "answer": "Access is reviewed quarterly by system owners.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "GitHub CUEC has no evidence",
+      "GitHub report is stale (period ended 2023-09-30)",
+      "People Data Labs CUEC has no evidence",
+      "People Data Labs report is stale (period ended 2022-09-30)"
+    ]
+  },
+  {
+    "id": "C0016",
+    "customer": "Contoso Health",
+    "topic": "rto",
+    "answer": "RTO is 8 hours for the production platform.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "no evidence of any kind is linked to this promise"
+    ]
+  },
+  {
+    "id": "C0019",
+    "customer": "Contoso Health",
+    "topic": "backup_retention",
+    "answer": "Daily backups, retained for 35 days.",
+    "verdict": "SUPPORTED",
+    "reasons": []
+  },
+  {
+    "id": "C0027",
+    "customer": "Contoso Health",
+    "topic": "data_deletion",
+    "answer": "Data is deleted within 30 days of termination and a certificate of destruction is provided.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "no evidence of any kind is linked to this promise"
+    ]
+  },
+  {
+    "id": "C0032",
+    "customer": "Contoso Health",
+    "topic": "encryption_at_rest",
+    "answer": "Yes - AES-256 via AWS KMS.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "no evidence of any kind is linked to this promise"
+    ]
+  },
+  {
+    "id": "C0047",
+    "customer": "Contoso Health",
+    "topic": "security_training",
+    "answer": "Training is completed at hire and annually.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "no evidence of any kind is linked to this promise"
+    ]
+  },
+  {
+    "id": "C0050",
+    "customer": "Contoso Health",
+    "topic": "breach_notification",
+    "answer": "Customers are notified within 24 hours of discovery of a breach involving PHI.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "no evidence of any kind is linked to this promise"
+    ]
+  },
+  {
+    "id": "C0051",
+    "customer": "Contoso Health",
+    "topic": "log_retention",
+    "answer": "Logs are retained for 12 months in immutable storage.",
+    "verdict": "AT RISK",
+    "reasons": [
+      "we actually do 90 days"
+    ]
+  },
+  {
+    "id": "C0062",
+    "customer": "Contoso Health",
+    "topic": "subprocessor_notice",
+    "answer": "Yes, we notify customers of new subprocessors.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "no evidence of any kind is linked to this promise"
+    ]
+  },
+  {
+    "id": "C0065",
+    "customer": "Contoso Health",
+    "topic": "vuln_remediation_critical",
+    "answer": "Critical vulnerabilities are patched within 7 days of identification.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "no evidence of any kind is linked to this promise"
+    ]
+  },
+  {
+    "id": "C0066",
+    "customer": "Contoso Health",
+    "topic": "pentest_frequency",
+    "answer": "Penetration testing is performed twice a year by an independent firm.",
+    "verdict": "AT RISK",
+    "reasons": [
+      "we actually do annually (last test 2026-02)"
+    ]
+  },
+  {
+    "id": "C0068",
+    "customer": "Fabrikam Retail",
+    "topic": "access_revocation",
+    "answer": "Access removal is completed within 48 hours.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "no evidence of any kind is linked to this promise"
+    ]
+  },
+  {
+    "id": "C0070",
+    "customer": "Fabrikam Retail",
+    "topic": "mfa_scope",
+    "answer": "Yes, MFA is enabled for administrator accounts.",
+    "verdict": "AT RISK",
+    "reasons": [
+      "GitHub CUEC failing: Org setting 'Require 2FA' is OFF; 3 members without 2FA"
+    ]
+  },
+  {
+    "id": "C0073",
+    "customer": "Fabrikam Retail",
+    "topic": "access_review_frequency",
+    "answer": "Access reviews are performed annually.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "GitHub CUEC has no evidence",
+      "GitHub report is stale (period ended 2023-09-30)",
+      "People Data Labs CUEC has no evidence",
+      "People Data Labs report is stale (period ended 2022-09-30)"
+    ]
+  },
+  {
+    "id": "C0083",
+    "customer": "Fabrikam Retail",
+    "topic": "backup_retention",
+    "answer": "Daily backups with 30 day retention.",
+    "verdict": "SUPPORTED",
+    "reasons": []
+  },
+  {
+    "id": "C0086",
+    "customer": "Fabrikam Retail",
+    "topic": "rto",
+    "answer": "We target an RTO of 24 hours.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "no evidence of any kind is linked to this promise"
+    ]
+  },
+  {
+    "id": "C0097",
+    "customer": "Fabrikam Retail",
+    "topic": "encryption_at_rest",
+    "answer": "Yes, data at rest is encrypted with AES-256.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "no evidence of any kind is linked to this promise"
+    ]
+  },
+  {
+    "id": "C0100",
+    "customer": "Fabrikam Retail",
+    "topic": "data_deletion",
+    "answer": "Customer data is purged within 90 days of termination.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "no evidence of any kind is linked to this promise"
+    ]
+  },
+  {
+    "id": "C0114",
+    "customer": "Fabrikam Retail",
+    "topic": "security_training",
+    "answer": "Upon hire and annually.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "no evidence of any kind is linked to this promise"
+    ]
+  },
+  {
+    "id": "C0115",
+    "customer": "Fabrikam Retail",
+    "topic": "breach_notification",
+    "answer": "Notification occurs without undue delay, typically within 72 hours.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "no evidence of any kind is linked to this promise"
+    ]
+  },
+  {
+    "id": "C0118",
+    "customer": "Fabrikam Retail",
+    "topic": "log_retention",
+    "answer": "We retain logs for 90 days.",
+    "verdict": "SUPPORTED",
+    "reasons": []
+  },
+  {
+    "id": "C0131",
+    "customer": "Fabrikam Retail",
+    "topic": "vuln_remediation_critical",
+    "answer": "Critical: 30 days.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "no evidence of any kind is linked to this promise"
+    ]
+  },
+  {
+    "id": "C0133",
+    "customer": "Fabrikam Retail",
+    "topic": "pentest_frequency",
+    "answer": "Annual penetration test by a third party.",
+    "verdict": "SUPPORTED",
+    "reasons": []
+  },
+  {
+    "id": "C0136",
+    "customer": "Northwind Bank",
+    "topic": "access_review_frequency",
+    "answer": "User access reviews are performed quarterly.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "GitHub CUEC has no evidence",
+      "GitHub report is stale (period ended 2023-09-30)",
+      "People Data Labs CUEC has no evidence",
+      "People Data Labs report is stale (period ended 2022-09-30)"
+    ]
+  },
+  {
+    "id": "C0139",
+    "customer": "Northwind Bank",
+    "topic": "access_revocation",
+    "answer": "Access is revoked within 24 hours of termination.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "no evidence of any kind is linked to this promise"
+    ]
+  },
+  {
+    "id": "C0140",
+    "customer": "Northwind Bank",
+    "topic": "mfa_scope",
+    "answer": "Yes. MFA is enforced for all administrative and production access.",
+    "verdict": "AT RISK",
+    "reasons": [
+      "GitHub CUEC failing: Org setting 'Require 2FA' is OFF; 3 members without 2FA"
+    ]
+  },
+  {
+    "id": "C0152",
+    "customer": "Northwind Bank",
+    "topic": "rto",
+    "answer": "Our RTO is 4 hours.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "no evidence of any kind is linked to this promise"
+    ]
+  },
+  {
+    "id": "C0153",
+    "customer": "Northwind Bank",
+    "topic": "backup_retention",
+    "answer": "Backups are performed daily and retained for 35 days.",
+    "verdict": "SUPPORTED",
+    "reasons": []
+  },
+  {
+    "id": "C0161",
+    "customer": "Northwind Bank",
+    "topic": "data_deletion",
+    "answer": "Customer data is deleted within 30 days of contract termination.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "no evidence of any kind is linked to this promise"
+    ]
+  },
+  {
+    "id": "C0166",
+    "customer": "Northwind Bank",
+    "topic": "encryption_at_rest",
+    "answer": "All customer data is encrypted at rest using AES-256.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "no evidence of any kind is linked to this promise"
+    ]
+  },
+  {
+    "id": "C0178",
+    "customer": "Northwind Bank",
+    "topic": "security_training",
+    "answer": "All employees complete security awareness training upon hire and annually thereafter.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "no evidence of any kind is linked to this promise"
+    ]
+  },
+  {
+    "id": "C0182",
+    "customer": "Northwind Bank",
+    "topic": "breach_notification",
+    "answer": "We will notify affected customers within 72 hours of confirming a security incident.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "no evidence of any kind is linked to this promise"
+    ]
+  },
+  {
+    "id": "C0185",
+    "customer": "Northwind Bank",
+    "topic": "log_retention",
+    "answer": "Security audit logs are retained for a minimum of one (1) year.",
+    "verdict": "AT RISK",
+    "reasons": [
+      "we actually do 90 days"
+    ]
+  },
+  {
+    "id": "C0195",
+    "customer": "Northwind Bank",
+    "topic": "subprocessor_notice",
+    "answer": "Yes. We provide 30 days' prior notice of new subprocessors.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "no evidence of any kind is linked to this promise"
+    ]
+  },
+  {
+    "id": "C0199",
+    "customer": "Northwind Bank",
+    "topic": "pentest_frequency",
+    "answer": "Third-party penetration tests are performed annually.",
+    "verdict": "SUPPORTED",
+    "reasons": []
+  },
+  {
+    "id": "C0200",
+    "customer": "Northwind Bank",
+    "topic": "vuln_remediation_critical",
+    "answer": "Critical vulnerabilities are remediated within 15 days.",
+    "verdict": "UNPROVEN",
+    "reasons": [
+      "no evidence of any kind is linked to this promise"
+    ]
+  }
+]

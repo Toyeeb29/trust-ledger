@@ -1,0 +1,45 @@
+approved_on: '2026-10-05'
+links:
+- promise_topic: access_review_frequency
+  vendor: GitHub
+  cuec_text: Administering and configuring repositories, including permissions, enabling required reviews for pull requests,
+    and enabling required status checks before merging.
+  source: github_soc3_2023.pdf PDF p.22
+  reviewer: demo review by Claude - re-review before relying
+  rationale: Repo permissions are part of what a quarterly access review covers for source code.
+- promise_topic: access_review_frequency
+  vendor: People Data Labs
+  cuec_text: User entities are responsible for ensuring the supervision, management, and control of the use of People Data
+    Labs, Inc. services by their personnel.
+  source: pdl_soc3.pdf PDF p.22
+  reviewer: demo review by Claude - re-review before relying
+  rationale: Reviewing who in our org can use PDL and how is part of access review.
+- promise_topic: mfa_scope
+  vendor: GitHub
+  cuec_text: Enabling SAML for their Enterprise Cloud accounts.
+  source: github_soc3_2023.pdf PDF p.22
+  reviewer: demo review by Claude - re-review before relying
+  rationale: SAML enforcement is how 'MFA for all workforce' reaches GitHub via the IdP.
+- promise_topic: mfa_scope
+  vendor: GitHub
+  cuec_text: Enabling two-factor authentication and ensuring members and collaborators require two-factor authentication;
+    this includes the implementation and management of personal access tokens.
+  source: github_soc3_2023.pdf PDF p.22
+  reviewer: demo review by Claude - re-review before relying
+  rationale: 'Directly required for the MFA promise: GitHub org must require 2FA for members and collaborators.'
+rejected:
+- promise_topic: backup_retention
+  vendor: People Data Labs
+  cuec_text: User entities are responsible for developing disaster recovery and business continuity plans that address the
+    inability to access or utilize People Data Labs, Inc. services.
+  reviewer: demo review by Claude - re-review before relying
+- promise_topic: encryption_at_rest
+  vendor: AWS
+  cuec_text: In addition, customers are responsible for encrypting sensitive data before it is passed to their workflows and
+    decrypting it in their workers.
+  reviewer: demo review by Claude - re-review before relying
+- promise_topic: rto
+  vendor: People Data Labs
+  cuec_text: User entities are responsible for developing disaster recovery and business continuity plans that address the
+    inability to access or utilize People Data Labs, Inc. services.
+  reviewer: demo review by Claude - re-review before relying
