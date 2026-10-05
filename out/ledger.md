@@ -2,9 +2,9 @@
 
 | Customer | Promises | ✅ Supported | ❌ At risk | ❔ Unproven |
 |---|---|---|---|---|
-| Contoso Health | 13 | 1 | 3 | 9 |
-| Fabrikam Retail | 12 | 3 | 1 | 8 |
-| Northwind Bank | 13 | 2 | 2 | 9 |
+| Contoso Health | 13 | 1 | 2 | 10 |
+| Fabrikam Retail | 12 | 3 | 0 | 9 |
+| Northwind Bank | 13 | 2 | 1 | 10 |
 
 ## Vendor reports relied on
 
@@ -16,13 +16,6 @@
 
 ## Contoso Health
 
-**❌ AT RISK: mfa scope**: “Yes. MFA is required for all workforce accounts.” <sub>(contoso_health_caiq.xlsx ACC-02.1)</sub>  
-Why: GitHub CUEC failing: Org setting 'Require 2FA' is OFF  
-- ❔ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling SAML for their Enterprise Cloud accounts.  
-  ↳ `github_saml_enforced`: SAML SSO requires GitHub Enterprise Cloud; org plan is 'free'
-- ❌ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling two-factor authentication and ensuring members and collaborators require two-factor authentication; this includes the implementation and management of personal access tokens.  
-  ↳ `github_org_2fa_required`: Org setting 'Require 2FA' is OFF
-
 **❌ AT RISK: log retention**: “Logs are retained for 12 months in immutable storage.” <sub>(contoso_health_caiq.xlsx LOG-51.1)</sub>  
 Why: we actually do 90 days  
 - ❌ Our environment: 90 days <sub>[S3 lifecycle rule on CloudTrail bucket]</sub>
@@ -30,6 +23,13 @@ Why: we actually do 90 days
 **❌ AT RISK: pentest frequency**: “Penetration testing is performed twice a year by an independent firm.” <sub>(contoso_health_caiq.xlsx VUL-66.1)</sub>  
 Why: we actually do annually (last test 2026-02)  
 - ❌ Our environment: annually (last test 2026-02) <sub>[Pentest report register]</sub>
+
+**❔ UNPROVEN: mfa scope**: “Yes. MFA is required for all workforce accounts.” <sub>(contoso_health_caiq.xlsx ACC-02.1)</sub>  
+Why: GitHub CUEC has no evidence; GitHub report is stale (period ended 2023-09-30)  
+- ❔ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling SAML for their Enterprise Cloud accounts.  
+  ↳ `github_saml_enforced`: SAML SSO requires GitHub Enterprise Cloud; org plan is 'free'
+- ✅ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling two-factor authentication and ensuring members and collaborators require two-factor authentication; this includes the implementation and management of personal access tokens.  
+  ↳ `github_org_2fa_required`: Org requires 2FA; 0 members without 2FA
 
 **❔ UNPROVEN: access revocation**: “Access is revoked within 24 hours of the employee's last day.” <sub>(contoso_health_caiq.xlsx ACC-05.1)</sub>  
 Why: no evidence of any kind is linked to this promise  
@@ -68,15 +68,15 @@ Why: no evidence of any kind is linked to this promise
 
 ## Fabrikam Retail
 
-**❌ AT RISK: mfa scope**: “Yes, MFA is enabled for administrator accounts.” <sub>(fabrikam_retail_vendor_review.xlsx 3)</sub>  
-Why: GitHub CUEC failing: Org setting 'Require 2FA' is OFF  
-- ❔ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling SAML for their Enterprise Cloud accounts.  
-  ↳ `github_saml_enforced`: SAML SSO requires GitHub Enterprise Cloud; org plan is 'free'
-- ❌ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling two-factor authentication and ensuring members and collaborators require two-factor authentication; this includes the implementation and management of personal access tokens.  
-  ↳ `github_org_2fa_required`: Org setting 'Require 2FA' is OFF
-
 **❔ UNPROVEN: access revocation**: “Access removal is completed within 48 hours.” <sub>(fabrikam_retail_vendor_review.xlsx 1)</sub>  
 Why: no evidence of any kind is linked to this promise  
+
+**❔ UNPROVEN: mfa scope**: “Yes, MFA is enabled for administrator accounts.” <sub>(fabrikam_retail_vendor_review.xlsx 3)</sub>  
+Why: GitHub CUEC has no evidence; GitHub report is stale (period ended 2023-09-30)  
+- ❔ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling SAML for their Enterprise Cloud accounts.  
+  ↳ `github_saml_enforced`: SAML SSO requires GitHub Enterprise Cloud; org plan is 'free'
+- ✅ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling two-factor authentication and ensuring members and collaborators require two-factor authentication; this includes the implementation and management of personal access tokens.  
+  ↳ `github_org_2fa_required`: Org requires 2FA; 0 members without 2FA
 
 **❔ UNPROVEN: access review frequency**: “Access reviews are performed annually.” <sub>(fabrikam_retail_vendor_review.xlsx 6)</sub>  
 Why: GitHub CUEC has no evidence; GitHub report is stale (period ended 2023-09-30); People Data Labs CUEC has no evidence; People Data Labs report is stale (period ended 2022-09-30)  
@@ -115,13 +115,6 @@ Why: no evidence of any kind is linked to this promise
 
 ## Northwind Bank
 
-**❌ AT RISK: mfa scope**: “Yes. MFA is enforced for all administrative and production access.” <sub>(northwind_bank_sig_lite.xlsx ACC-006)</sub>  
-Why: GitHub CUEC failing: Org setting 'Require 2FA' is OFF  
-- ❔ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling SAML for their Enterprise Cloud accounts.  
-  ↳ `github_saml_enforced`: SAML SSO requires GitHub Enterprise Cloud; org plan is 'free'
-- ❌ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling two-factor authentication and ensuring members and collaborators require two-factor authentication; this includes the implementation and management of personal access tokens.  
-  ↳ `github_org_2fa_required`: Org setting 'Require 2FA' is OFF
-
 **❌ AT RISK: log retention**: “Security audit logs are retained for a minimum of one (1) year.” <sub>(northwind_bank_sig_lite.xlsx LOG-051)</sub>  
 Why: we actually do 90 days  
 - ❌ Our environment: 90 days <sub>[S3 lifecycle rule on CloudTrail bucket]</sub>
@@ -135,6 +128,13 @@ Why: GitHub CUEC has no evidence; GitHub report is stale (period ended 2023-09-3
 
 **❔ UNPROVEN: access revocation**: “Access is revoked within 24 hours of termination.” <sub>(northwind_bank_sig_lite.xlsx ACC-005)</sub>  
 Why: no evidence of any kind is linked to this promise  
+
+**❔ UNPROVEN: mfa scope**: “Yes. MFA is enforced for all administrative and production access.” <sub>(northwind_bank_sig_lite.xlsx ACC-006)</sub>  
+Why: GitHub CUEC has no evidence; GitHub report is stale (period ended 2023-09-30)  
+- ❔ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling SAML for their Enterprise Cloud accounts.  
+  ↳ `github_saml_enforced`: SAML SSO requires GitHub Enterprise Cloud; org plan is 'free'
+- ✅ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling two-factor authentication and ensuring members and collaborators require two-factor authentication; this includes the implementation and management of personal access tokens.  
+  ↳ `github_org_2fa_required`: Org requires 2FA; 0 members without 2FA
 
 **❔ UNPROVEN: rto**: “Our RTO is 4 hours.” <sub>(northwind_bank_sig_lite.xlsx BUS-018)</sub>  
 Why: no evidence of any kind is linked to this promise  

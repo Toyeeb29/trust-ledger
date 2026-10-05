@@ -4,9 +4,10 @@
     "customer": "Contoso Health",
     "topic": "mfa_scope",
     "answer": "Yes. MFA is required for all workforce accounts.",
-    "verdict": "AT RISK",
+    "verdict": "UNPROVEN",
     "reasons": [
-      "GitHub CUEC failing: Org setting 'Require 2FA' is OFF"
+      "GitHub CUEC has no evidence",
+      "GitHub report is stale (period ended 2023-09-30)"
     ]
   },
   {
@@ -145,9 +146,10 @@
     "customer": "Fabrikam Retail",
     "topic": "mfa_scope",
     "answer": "Yes, MFA is enabled for administrator accounts.",
-    "verdict": "AT RISK",
+    "verdict": "UNPROVEN",
     "reasons": [
-      "GitHub CUEC failing: Org setting 'Require 2FA' is OFF"
+      "GitHub CUEC has no evidence",
+      "GitHub report is stale (period ended 2023-09-30)"
     ]
   },
   {
@@ -275,9 +277,10 @@
     "customer": "Northwind Bank",
     "topic": "mfa_scope",
     "answer": "Yes. MFA is enforced for all administrative and production access.",
-    "verdict": "AT RISK",
+    "verdict": "UNPROVEN",
     "reasons": [
-      "GitHub CUEC failing: Org setting 'Require 2FA' is OFF"
+      "GitHub CUEC has no evidence",
+      "GitHub report is stale (period ended 2023-09-30)"
     ]
   },
   {
