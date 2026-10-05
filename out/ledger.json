@@ -6,7 +6,7 @@
     "answer": "Yes. MFA is required for all workforce accounts.",
     "verdict": "AT RISK",
     "reasons": [
-      "GitHub CUEC failing: Org setting 'Require 2FA' is OFF; 3 members without 2FA"
+      "GitHub CUEC failing: Org setting 'Require 2FA' is OFF"
     ]
   },
   {
@@ -147,7 +147,7 @@
     "answer": "Yes, MFA is enabled for administrator accounts.",
     "verdict": "AT RISK",
     "reasons": [
-      "GitHub CUEC failing: Org setting 'Require 2FA' is OFF; 3 members without 2FA"
+      "GitHub CUEC failing: Org setting 'Require 2FA' is OFF"
     ]
   },
   {
@@ -277,7 +277,7 @@
     "answer": "Yes. MFA is enforced for all administrative and production access.",
     "verdict": "AT RISK",
     "reasons": [
-      "GitHub CUEC failing: Org setting 'Require 2FA' is OFF; 3 members without 2FA"
+      "GitHub CUEC failing: Org setting 'Require 2FA' is OFF"
     ]
   },
   {

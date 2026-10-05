@@ -1,0 +1,11 @@
+{
+  "org": {
+    "status": 200,
+    "two_factor_requirement_enabled": false,
+    "plan": "free"
+  },
+  "members_2fa_disabled": {
+    "status": 200,
+    "count": 0
+  }
+}

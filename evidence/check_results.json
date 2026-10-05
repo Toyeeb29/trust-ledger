@@ -1,11 +1,34 @@
 {
   "_note": "Simulated output of automated checks (in production: AWS Config, Okta API, GitHub API). Missing check = no evidence.",
-  "collected_at": "2026-10-05T15:45:00-04:00",
+  "collected_at": "2026-10-05T21:14:37+00:00",
   "results": {
-    "aws_root_and_admin_mfa":       {"status": "pass", "detail": "Root + 4/4 admin roles require MFA"},
-    "aws_s3_default_encryption":    {"status": "pass", "detail": "12/12 buckets SSE-KMS"},
-    "aws_cloudtrail_retention_365d":{"status": "fail", "detail": "Log bucket lifecycle deletes after 90 days"},
-    "okta_mfa_policy_all_users":    {"status": "pass", "detail": "Global MFA policy applies to Everyone group"},
-    "github_org_2fa_required":      {"status": "fail", "detail": "Org setting 'Require 2FA' is OFF; 3 members without 2FA"}
+    "aws_root_and_admin_mfa": {
+      "status": "pass",
+      "detail": "Root + 4/4 admin roles require MFA"
+    },
+    "aws_s3_default_encryption": {
+      "status": "pass",
+      "detail": "12/12 buckets SSE-KMS"
+    },
+    "aws_cloudtrail_retention_365d": {
+      "status": "fail",
+      "detail": "Log bucket lifecycle deletes after 90 days"
+    },
+    "okta_mfa_policy_all_users": {
+      "status": "pass",
+      "detail": "Global MFA policy applies to Everyone group"
+    },
+    "github_org_2fa_required": {
+      "status": "fail",
+      "detail": "Org setting 'Require 2FA' is OFF",
+      "collected_at": "2026-10-05T21:14:36+00:00",
+      "source": "GitHub API"
+    },
+    "github_saml_enforced": {
+      "status": "missing",
+      "collected_at": "2026-10-05T21:14:36+00:00",
+      "source": "GitHub API",
+      "detail": "SAML SSO requires GitHub Enterprise Cloud; org plan is 'free'"
+    }
   }
 }

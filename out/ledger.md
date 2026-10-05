@@ -17,11 +17,11 @@
 ## Contoso Health
 
 **❌ AT RISK: mfa scope**: “Yes. MFA is required for all workforce accounts.” <sub>(contoso_health_caiq.xlsx ACC-02.1)</sub>  
-Why: GitHub CUEC failing: Org setting 'Require 2FA' is OFF; 3 members without 2FA  
+Why: GitHub CUEC failing: Org setting 'Require 2FA' is OFF  
 - ❔ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling SAML for their Enterprise Cloud accounts.  
-  ↳ `github_saml_enforced`: no evidence collected
+  ↳ `github_saml_enforced`: SAML SSO requires GitHub Enterprise Cloud; org plan is 'free'
 - ❌ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling two-factor authentication and ensuring members and collaborators require two-factor authentication; this includes the implementation and management of personal access tokens.  
-  ↳ `github_org_2fa_required`: Org setting 'Require 2FA' is OFF; 3 members without 2FA
+  ↳ `github_org_2fa_required`: Org setting 'Require 2FA' is OFF
 
 **❌ AT RISK: log retention**: “Logs are retained for 12 months in immutable storage.” <sub>(contoso_health_caiq.xlsx LOG-51.1)</sub>  
 Why: we actually do 90 days  
@@ -69,11 +69,11 @@ Why: no evidence of any kind is linked to this promise
 ## Fabrikam Retail
 
 **❌ AT RISK: mfa scope**: “Yes, MFA is enabled for administrator accounts.” <sub>(fabrikam_retail_vendor_review.xlsx 3)</sub>  
-Why: GitHub CUEC failing: Org setting 'Require 2FA' is OFF; 3 members without 2FA  
+Why: GitHub CUEC failing: Org setting 'Require 2FA' is OFF  
 - ❔ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling SAML for their Enterprise Cloud accounts.  
-  ↳ `github_saml_enforced`: no evidence collected
+  ↳ `github_saml_enforced`: SAML SSO requires GitHub Enterprise Cloud; org plan is 'free'
 - ❌ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling two-factor authentication and ensuring members and collaborators require two-factor authentication; this includes the implementation and management of personal access tokens.  
-  ↳ `github_org_2fa_required`: Org setting 'Require 2FA' is OFF; 3 members without 2FA
+  ↳ `github_org_2fa_required`: Org setting 'Require 2FA' is OFF
 
 **❔ UNPROVEN: access revocation**: “Access removal is completed within 48 hours.” <sub>(fabrikam_retail_vendor_review.xlsx 1)</sub>  
 Why: no evidence of any kind is linked to this promise  
@@ -116,11 +116,11 @@ Why: no evidence of any kind is linked to this promise
 ## Northwind Bank
 
 **❌ AT RISK: mfa scope**: “Yes. MFA is enforced for all administrative and production access.” <sub>(northwind_bank_sig_lite.xlsx ACC-006)</sub>  
-Why: GitHub CUEC failing: Org setting 'Require 2FA' is OFF; 3 members without 2FA  
+Why: GitHub CUEC failing: Org setting 'Require 2FA' is OFF  
 - ❔ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling SAML for their Enterprise Cloud accounts.  
-  ↳ `github_saml_enforced`: no evidence collected
+  ↳ `github_saml_enforced`: SAML SSO requires GitHub Enterprise Cloud; org plan is 'free'
 - ❌ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling two-factor authentication and ensuring members and collaborators require two-factor authentication; this includes the implementation and management of personal access tokens.  
-  ↳ `github_org_2fa_required`: Org setting 'Require 2FA' is OFF; 3 members without 2FA
+  ↳ `github_org_2fa_required`: Org setting 'Require 2FA' is OFF
 
 **❌ AT RISK: log retention**: “Security audit logs are retained for a minimum of one (1) year.” <sub>(northwind_bank_sig_lite.xlsx LOG-051)</sub>  
 Why: we actually do 90 days  
