@@ -1,6 +1,6 @@
 {
   "_note": "Simulated output of automated checks (in production: AWS Config, Okta API, GitHub API). Missing check = no evidence.",
-  "collected_at": "2026-10-12T21:44:51+00:00",
+  "collected_at": "2026-10-19T19:20:34+00:00",
   "results": {
     "aws_root_and_admin_mfa": {
       "status": "pass",
@@ -21,12 +21,12 @@
     "github_org_2fa_required": {
       "status": "pass",
       "detail": "Org requires 2FA; 0 members without 2FA",
-      "collected_at": "2026-10-12T21:44:51+00:00",
+      "collected_at": "2026-10-19T19:20:33+00:00",
       "source": "GitHub API"
     },
     "github_saml_enforced": {
       "status": "missing",
-      "collected_at": "2026-10-12T21:44:51+00:00",
+      "collected_at": "2026-10-19T19:20:33+00:00",
       "source": "GitHub API",
       "detail": "SAML SSO requires GitHub Enterprise Cloud; org plan is 'free'"
     }
