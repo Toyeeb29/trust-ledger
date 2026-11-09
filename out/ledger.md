@@ -27,9 +27,9 @@ Why: we actually do annually (last test 2026-02)
 **❔ UNPROVEN: mfa scope**: “Yes. MFA is required for all workforce accounts.” <sub>(contoso_health_caiq.xlsx ACC-02.1)</sub>  
 Why: GitHub CUEC has no evidence; GitHub report is stale (period ended 2023-09-30)  
 - ❔ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling SAML for their Enterprise Cloud accounts.  
-  ↳ `github_saml_enforced`: SAML SSO requires GitHub Enterprise Cloud; org plan is 'free'
-- ✅ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling two-factor authentication and ensuring members and collaborators require two-factor authentication; this includes the implementation and management of personal access tokens.  
-  ↳ `github_org_2fa_required`: Org requires 2FA; 0 members without 2FA
+  ↳ `github_saml_enforced`: SAML SSO requires GitHub Enterprise Cloud; org plan is 'unknown'
+- ❔ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling two-factor authentication and ensuring members and collaborators require two-factor authentication; this includes the implementation and management of personal access tokens.  
+  ↳ `github_org_2fa_required`: Could not read org 2FA setting (HTTP 401); token must belong to an org owner and have admin:org
 
 **❔ UNPROVEN: access revocation**: “Access is revoked within 24 hours of the employee's last day.” <sub>(contoso_health_caiq.xlsx ACC-05.1)</sub>  
 Why: no evidence of any kind is linked to this promise  
@@ -74,9 +74,9 @@ Why: no evidence of any kind is linked to this promise
 **❔ UNPROVEN: mfa scope**: “Yes, MFA is enabled for administrator accounts.” <sub>(fabrikam_retail_vendor_review.xlsx 3)</sub>  
 Why: GitHub CUEC has no evidence; GitHub report is stale (period ended 2023-09-30)  
 - ❔ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling SAML for their Enterprise Cloud accounts.  
-  ↳ `github_saml_enforced`: SAML SSO requires GitHub Enterprise Cloud; org plan is 'free'
-- ✅ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling two-factor authentication and ensuring members and collaborators require two-factor authentication; this includes the implementation and management of personal access tokens.  
-  ↳ `github_org_2fa_required`: Org requires 2FA; 0 members without 2FA
+  ↳ `github_saml_enforced`: SAML SSO requires GitHub Enterprise Cloud; org plan is 'unknown'
+- ❔ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling two-factor authentication and ensuring members and collaborators require two-factor authentication; this includes the implementation and management of personal access tokens.  
+  ↳ `github_org_2fa_required`: Could not read org 2FA setting (HTTP 401); token must belong to an org owner and have admin:org
 
 **❔ UNPROVEN: access review frequency**: “Access reviews are performed annually.” <sub>(fabrikam_retail_vendor_review.xlsx 6)</sub>  
 Why: GitHub CUEC has no evidence; GitHub report is stale (period ended 2023-09-30); People Data Labs CUEC has no evidence; People Data Labs report is stale (period ended 2022-09-30)  
@@ -132,9 +132,9 @@ Why: no evidence of any kind is linked to this promise
 **❔ UNPROVEN: mfa scope**: “Yes. MFA is enforced for all administrative and production access.” <sub>(northwind_bank_sig_lite.xlsx ACC-006)</sub>  
 Why: GitHub CUEC has no evidence; GitHub report is stale (period ended 2023-09-30)  
 - ❔ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling SAML for their Enterprise Cloud accounts.  
-  ↳ `github_saml_enforced`: SAML SSO requires GitHub Enterprise Cloud; org plan is 'free'
-- ✅ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling two-factor authentication and ensuring members and collaborators require two-factor authentication; this includes the implementation and management of personal access tokens.  
-  ↳ `github_org_2fa_required`: Org requires 2FA; 0 members without 2FA
+  ↳ `github_saml_enforced`: SAML SSO requires GitHub Enterprise Cloud; org plan is 'unknown'
+- ❔ GitHub CUEC <sub>(github_soc3_2023.pdf PDF p.22)</sub>: Enabling two-factor authentication and ensuring members and collaborators require two-factor authentication; this includes the implementation and management of personal access tokens.  
+  ↳ `github_org_2fa_required`: Could not read org 2FA setting (HTTP 401); token must belong to an org owner and have admin:org
 
 **❔ UNPROVEN: rto**: “Our RTO is 4 hours.” <sub>(northwind_bank_sig_lite.xlsx BUS-018)</sub>  
 Why: no evidence of any kind is linked to this promise  
